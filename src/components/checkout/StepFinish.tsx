@@ -2,7 +2,7 @@ import { Button } from "../ui/button";
 import { useGenerateMessage } from "@/lib/generateMessage";
 
 function StepFinish() {
-  const message = useGenerateMessage();
+  const message = useGenerateMessage() ?? " ";
 
   const linkZap = `https://wa.me//${
     import.meta.env.VITE_ZAP
