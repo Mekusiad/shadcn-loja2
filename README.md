@@ -13,7 +13,7 @@ git clone git@github.com:Mekusiad/shadcn-loja2.git
 Após clonar a pasta:
 
 ```
-cd shadcn-loja
+cd shadcn-loja2
 ```
 
 e instale as dependências:
