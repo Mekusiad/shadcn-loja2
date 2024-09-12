@@ -10,8 +10,8 @@ export const useGenerateMessage = () => {
 
   for (const item of cartItems) {
     orderProducts.push(`${item.quantity} x ${item.product.name}`);
-
-    return `
+  }
+  return `
     
     ***Dados do cliente: ***
     ------------------------------------------
@@ -22,13 +22,12 @@ export const useGenerateMessage = () => {
      Complemento: ${address.complement} 
      Bairro: ${address.district}
      Cep: ${address.cep}
-     Telefone para contato: ${address.number}
+     Telefone para contato: ${address.phone}
     ------------------------------------------
 
     *** Pedido ***
-    ${orderProducts.join("\n")}
+${orderProducts.join("\n")}
     ----------
 
     `;
-  }
 };
